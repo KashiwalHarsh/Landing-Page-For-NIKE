@@ -1,2 +1,2 @@
 # Landing-Page-For-NIKE
-A Cool Looking Landing page made with Vanilla CSS and JavaScript to Polish my Designing skill
+A Beautiful design and a good looking landing page created using Vanilla JS and CSS to polish my development skills
