@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.menu-icon {
+    width: 30px;
+    cursor: pointer;
+    margin: 30px 0;
+    display: none;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-family: Helvetica, sans-serif;
+}
+
+nav ul li a:hover {
+    color: #00c100;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 80px 0 0 0;
+}
+
+.col-1 {
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+
+.col-1::after {
+    content: "";
+    width: 10px;
+    height: 57%;
+    background: linear-gradient(145deg, #46ff4c, #00ff00);
+    position: absolute;
+    left: -40px;
+    top: 3px;
+}
+
+.col-1 h2 {
+    font-size: 54px;
+    font-weight: 500;
+    font-weight: 500;
+    line-height: 0.9;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.col-1 h3 {
+    font-size: 30px;
+    color: #707070;
+    font-weight: 100;
+    margin: 20px 0 10px;
+}
+
+.col-1 p {
+    font-size: 20px;
+    color: #404040;
+    font-weight: 100;
+    padding-bottom: 10px;
+}
+
+.col-1 h4 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 30px 0 30px 0;
+    color: rgb(74, 73, 73);
+}
+
+.col-1 h4 .size {
+    color: rgb(130, 130, 130);
+    margin-right: 12px;
+}
+
+.col-1 h4 .size-h {
+    color: rgb(63, 63, 63);
+    margin-right: 12px;
+}
+
+button {
+    width: 140px;
+    border: 0;
+    ;
+    outline: none;
+    padding: 12px 10px;
+    color: #fff;
+    background: linear-gradient(145deg, #46ff4c, #00ff00);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5s;
+}
+
+button img {
+    width: 30px;
+    display: none;
+}
+
+button:hover img {
+    display: block;
+}
+
+button:hover {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.col-2 {
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.col-2 .shoe {
+    width: 90%;
+    transform: rotateX(10deg);
+}
+
+.color-box-1 {
+    position: absolute;
+    right: 0;
+    top: -40px;
+    background-color: #4bff4d;
+    /* background: linear-gradient(145deg, #0d9d11,#00ff00); */
+    border-radius: 50% / 50%;
+    height: 400px;
+    width: 400px;
+    z-index: -1;
+}
+
+.color-box-2 {
+    position: absolute;
+    left: 140px;
+    top: 110px;
+    background-color: #ffb62e;
+    /* background: linear-gradient(145deg, #f58321,#fda86b); */
+    border-radius: 50% / 50%;
+    height: 250px;
+    width: 250px;
+    z-index: -2;
+}
+
+.add-btn {
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.add-btn img {
+    width: 35px;
+    margin-bottom: 5px;
+}
+
+.social-links {
+    text-align: center;
+}
+
+.social-links img {
+    height: 13px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 700px) {
+
+    nav ul {
+        width: 100%;
+        background: linear-gradient(145deg, #46ff4c, #00ff00);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        color: black;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #menuList {
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .row {
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+
+    .col-1{
+        flex-basis: 100%;
+    }
+    .col-1 h2{
+        font-size: 40px;
+    }
+    .col-1 h3{
+        font-size: 20px;
+    }
+
+    .col-2 {
+        margin-bottom: 100px;
+        flex-basis: 100%;
+
+    }
+
+    .col-2 .shoe {
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .color-box-1 {
+        position: absolute;
+        right: 0;
+        top: 60px;
+        background-color: #4bff4d;
+        border-radius: 50% / 50%;
+        height: 300px;
+        width: 300px;
+        z-index: -1;
+    }
+
+    .color-box-2 {
+        position: absolute;
+        left: 150px;
+        top: 200px;
+        background-color: #ffb62e;
+        border-radius: 50% / 50%;
+        height: 200px;
+        width: 200px;
+        z-index: -2;
+    }
+}

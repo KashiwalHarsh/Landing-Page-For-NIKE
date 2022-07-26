@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Metcon 8</title>
+    <!-- ---------stylesheetCSS---------- -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- -------FontawesomeCDN------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- -------Favicon------- -->
+    <link rel="icon" type="image/x-icon" href="Img/Icon.png">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="img/logo.png" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="#">New Release</a></li>
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">Stores</a></li>
+                    <li><a href="#">SNKR</a></li>
+                </ul>
+            </nav>
+            <img src="img/menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <p>Nike Metcon 8 FlyEase</p>
+                <h2>BUILT TO RAISE <br> THE BAR</h2>
+                <h3>Men's Easy On/Off Training Shoes</h3>
+                <h4><span class="size">7</span>
+                    <span class="size">8</span>
+                    <span class="size">9</span>
+                    <span class="size-h"><b>10</b></span>
+                    <span class="size">11</span>
+                    <span class="size">12</span>
+                    <span class="size">13</span>
+                </h4>
+                <button type="button">Add to Cart <img src="img/arrow.png"></button>
+            </div>
+            <div class="col-2">
+                <img src="img/shoe5.png" class="shoe">
+                <div class="color-box-1"></div>
+                <div class="color-box-2"></div>
+                <!-- <div class="add-btn">
+                    <img src="img/add.png" >
+                    <p><small>Add to Cart</small></p>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="social-links">
+            <img src="img/fb.png">
+            <img src="img/tw.png">
+            <img src="img/ig.png">
+        </div>
+    </div>
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "130px";
+            }
+            else
+            {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+
+</html>
